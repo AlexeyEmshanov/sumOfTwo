@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/typedd/sumOfTwo/issues"
   },
-  "homepage": "https://github.com/typedd/sumOfTwo#readme"
+  "homepage": "https://github.com/typedd/sumOfTwo#readme",
+  "devDependencies": {
+    "flow-bin": "^0.141.0"
+  }
 }
