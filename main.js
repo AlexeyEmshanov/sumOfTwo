@@ -1,19 +1,14 @@
 // @flow
 
-const computeAllSums/*: (Array< number >, Array< number >) => Array< number > */ = (as, bs) => {
-    const summs = [];
-    for (i = 0; i < as.length; i++) {
-        for (j = 0; j < bs.length; j++) {
-            summs.push(as[i] + bs[j]);
+function sumOfTwo(nums1, nums2, value) {
+    //  write code here.
+    let arrOfSums = []
+    for (let i=0; i < nums1.length; i++) {
+        for (let j=0; j < nums2.length; j++) {
+            arrOfSums.push(nums1[i] + nums2[j])
         }
     }
-    console.log(summs);
-    return summs;
-};
-
-const sumOfTwo/*: (Array< number >, Array< number >, number) => boolean */ = (nums1, nums2, value) => {
-    const allSums/*: Array< number > */ = computeAllSums(nums1, nums2);
-    return allSums.includes(value);
+    console.log(arrOfSums)
+    return arrOfSums.includes(value)
+    
 }
-
-console.log(sumOfTwo([1,2,3], [10,20,30,40], 42));
