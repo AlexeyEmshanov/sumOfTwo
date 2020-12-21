@@ -1,7 +1,14 @@
 // @flow
 
 const computeAllSums/*: (Array< number >, Array< number >) => Array< number > */ = (as, bs) => {
-    return [42];
+    const summs = [];
+    for (i = 0; i < as.length; i++) {
+        for (j = 0; j < bs.length; j++) {
+            summs.push(as[i] + bs[j]);
+        }
+    }
+    console.log(summs);
+    return summs;
 };
 
 const sumOfTwo/*: (Array< number >, Array< number >, number) => boolean */ = (nums1, nums2, value) => {
